@@ -36,7 +36,7 @@ def generate_random_data() -> Iterator[str]:
                 }
             )
             yield f"data:{json_data}\n\n"
-            time.sleep(1)
+            time.sleep(4)
     except GeneratorExit:
         logger.info("Client %a disconnected", client_ip)
 
